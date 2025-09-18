@@ -33,8 +33,7 @@ const desconto =
 toNumber(document.getElementById('desconto').value);
 const taxa = toNumber(document.getElementById('taxa').value);
 const parcelasRaw = document.getElementById('parcelas').value;
-const parcelas = parseInt(String(parcelasRaw).replace(',', ''),
-10);
+const parcelas = parseInt(String(parcelasRaw).replace(',', ''),10);
 // Validações
 if (isNaN(preco) || preco <= 0) throw new Error('Informe um preço válido (> 0).');
 if (isNaN(desconto) || desconto < 0) throw new Error('Desconto deve ser ≥ 0.');
@@ -82,8 +81,7 @@ const tdAmortizacao = document.createElement('td');
 tdAmortizacao.textContent = moedaBR(amortizacaoConstante);
 const tdRestante = document.createElement('td');
 tdRestante.textContent = moedaBR(principalRestante);
-// Usa appendChild (mais compatível que append com múltiplos
-args)
+// Usa appendChild (mais compatível que append com múltiplos args)
 tr.appendChild(tdMes);
 tr.appendChild(tdParcela);
 tr.appendChild(tdJurosMes);
