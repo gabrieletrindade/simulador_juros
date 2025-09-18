@@ -37,8 +37,7 @@ const parcelas = parseInt(String(parcelasRaw).replace(',', ''),
 10);
 // Validações
 if (isNaN(preco) || preco <= 0) throw new Error('Informe um preço válido (> 0).');
-if (isNaN(desconto) || desconto < 0) throw new Error('Desconto deve
-ser ≥ 0.');
+if (isNaN(desconto) || desconto < 0) throw new Error('Desconto deve ser ≥ 0.');
 if (isNaN(taxa) || taxa < 0) throw new Error('Taxa deve ser ≥ 0.');
 if (isNaN(parcelas) || parcelas < 1) throw new Error('Número de
 parcelas deve ser ≥ 1.');
@@ -101,4 +100,4 @@ resultados.hidden = true;
 tabelaSecao.hidden = true;
 }
 });
-});s
+});
