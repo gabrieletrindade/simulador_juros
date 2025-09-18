@@ -42,8 +42,7 @@ if (isNaN(parcelas) || parcelas < 1) throw new Error('Número de parcelas deve s
 // Cálculos
 const precoComDesconto = preco * (1 - desconto / 100);
 const i = taxa / 100; // taxa decimal ao mês
-const J_total = precoComDesconto * i * parcelas; // juros simples
-total
+const J_total = precoComDesconto * i * parcelas; // juros simples total
 const totalPagar = precoComDesconto + J_total;
 const valorParcela = totalPagar / parcelas;
 const economia = preco - precoComDesconto;
